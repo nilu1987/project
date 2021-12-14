@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_test_set"
+        android:title="setting"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_test_rep"
+        android:title="report"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_test_chart"
+        android:title="chart"
+        app:showAsAction="never" />
+    <item
+        android:title="Item"
+        app:showAsAction="collapseActionView" />
+</menu>

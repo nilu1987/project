@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersistentBottomSheet.PersistentBottomSheetActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Expand" />
+
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/se"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#009688"
+        android:padding="8dp"
+        app:behavior_peekHeight="60dp"
+        app:behavior_hideable="true"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+        <LinearLayout
+            android:id="@+id/see"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout_login_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:gravity="start"
+                android:hint="شماره موبایل یا ایمیل">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditText_login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Bottom Sheet Title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:text="Lorem ipsum dolor sit amet, te sed vide delicata,
+            per ex salutandi intellegat temporibus, ei insolens molestiae vis.
+            Eum ei possim aperiam, fuisset suscipit vim ut. Voluptua repudiare
+            gubergren id eum, nullam labores an nam. Sed et tota quaerendum,
+            enim elit democritum quo et.
+            Lorem ipsum dolor sit amet, te sed vide delicata,
+            per ex salutandi intellegat temporibus, ei insolens molestiae vis.
+            Eum ei possim aperiam, fuisset suscipit vim ut. Voluptua repudiare
+            gubergren id eum, nullam labores an nam. Sed et tota quaerendum,
+            enim elit democritum quo et." />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
